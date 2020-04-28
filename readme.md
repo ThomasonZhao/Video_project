@@ -1,11 +1,11 @@
-#Django搭建的SMS视频点播网站(个人学习日志)
+# Django搭建的SMS视频点播网站(个人学习日志)
 
 声明：本文内容参考[原项目](https://github.com/geeeeeeeek/videoproject)
 ，进行Django项目学习和练习。
 
-##第一天 配置环境与项目创建
+## 第一天 配置环境与项目创建
 
-###安装Python（编译器）  
+### 安装Python（编译器）  
 `$ brew install python`  
 
 brew 会自动安装pip和一些基础Python包    
@@ -16,7 +16,7 @@ $python3 -V
 Python 3.7.4
 ```
 
-###安装MySQL（数据库）  
+### 安装MySQL（数据库）  
 MAC系统可以去[MySQL官网](https://dev.mysql.com/downloads/mysql/)
 直接下载安装包，安装过程会提示设置账号密码，一定要牢记。  
 安装完成之后输入 `$ mysql -V` 查看MySQL版本。  
@@ -29,13 +29,13 @@ mysql  Ver 8.0.17 for osx10.14 on x86_64 (Homebrew)
 mysql> create DATABASE video;
 ```
 
-###安装PyCharm（IDE）  
+### 安装PyCharm（IDE）  
 Pycharm是jetbrain公司极其强大的PythonIDE，跨平台，性能好，
 以下所有的开发全部在Pycharm中完成。  
 到[Pycharm官网](https://www.jetbrains.com/pycharm/download/#section=mac)
 下载安装包安装即可，本人使用的是专业版。
 
-###配置虚拟环境
+### 配置虚拟环境
 虚拟环境在开发中是非常重要的，为了避免不同项目所用的库的不同、
 版本不一而造成环境混乱，通常为每一个项目单独配置环境。  
 ```
@@ -62,7 +62,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 列出虚拟环境：`$ lsvirtualenv`  
 删除虚拟环境：`$ rmvirtualenv videoproject`
 
-###其他安装
+### 其他安装
 这个就是对于项目开发可能用到的Python库，
 我保存在了[requirements.txt](./requirements.txt)里面
 ```asgiref==3.2.7
@@ -78,7 +78,7 @@ sqlparse==0.3.1
 可以直接使用pip进行安装：  
 `$ pip3 install -r requirements.txt`
 
-###项目创建
+### 项目创建
 首先进入虚拟环境，在所需要的文件夹下创建项目：  
 `$ django-admin startproject videoproject`  
 专业版Pycharm可以直接在项目创建时候指定为Django项目，自动创建所需项目文件
@@ -93,7 +93,7 @@ Quit the server with CONTROL-C.
 在浏览器中输入http://127.0.0.1:8000/即可访问Django默认首页，
 这个地址是Django自动生成的轻量级服务器，为测试使用的
 
-###项目配置
+### 项目配置
 项目的配置文件在 `videoproject/videoproject/settings.py`  
 
 首先需要配置的是文字编码格式，django默认的编码是英文格式，
@@ -142,4 +142,4 @@ pymysql.install_as_MySQLdb()
 
 最后可再次运行工程，检查配置是否正确。
 
-##第二天
+## 第二天
