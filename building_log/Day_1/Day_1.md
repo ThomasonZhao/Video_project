@@ -4,7 +4,7 @@
 `$ brew install python`  
 
 brew 会自动安装pip和一些基础Python包    
-安装完毕后，在终端输入 `python3 -v` ，
+安装完毕后，在终端输入 `python3 -V` ，
 如果输出了 Python 的版本号，说明 Python 已安装成功。   
 ```
 $python3 -V
@@ -13,8 +13,8 @@ Python 3.7.4
 
 ### 安装MySQL（数据库）  
 MAC系统可以去 [MySQL官网](https://dev.mysql.com/downloads/mysql/)
-直接下载安装包，安装过程会提示设置账号密码，一定要牢记。  
-安装完成之后输入 `$ mysql -V` 查看MySQL版本。  
+直接下载安装包，安装过程会提示设置账号密码，一定要牢记。也可以通过brew安装  
+安装完成之后输入 `$ mysql -V` 查看MySQL版本。我的是brew安装的，所以有`(Homebrew)`字样
 ```
 $ mysql -V
 mysql  Ver 8.0.17 for osx10.14 on x86_64 (Homebrew)
