@@ -9,5 +9,5 @@
 在学完Django不久，并受到 [原项目](https://github.com/geeeeeeeek/videoproject)
 的启发后决定整合SMS所有视频以及摄影资源放在Django搭建的网页上，同时练习Django后端操作。  
 
-###问题反馈：
+## 问题反馈与交流
 Email: ThomasonZhao810@gmail.com
