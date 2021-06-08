@@ -2,7 +2,7 @@ asgiref==3.2.7
 Django==3.0.5
 django-chunked-upload==2.0.0
 django-ratelimit==2.0.0
-Pillow==7.1.2
+Pillow==8.2.0
 PyMySQL==0.9.3
 pytz==2019.3
 sorl-thumbnail==12.6.3
